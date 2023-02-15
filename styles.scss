@@ -1,0 +1,218 @@
+$DarkestGrey: hsl(217, 19%, 35%);
+$DarkGrey: hsl(214, 17%, 51%);
+$Grey: hsl(212, 23%, 69%);
+$Light: hsl(210, 46%, 95%);
+
+//Family: [Manrope](https://fonts.google.com/specimen/Manrope)
+//Weights: 500, 700
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: $DarkGrey;
+
+}
+
+body{
+    background-color: $Light;
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    max-width: 30rem;
+}
+
+.hero{
+    width: 100%;
+    max-height: 20rem;
+    object-fit: fill;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.card{
+    margin: 3rem;
+
+    h1{
+        color: $DarkestGrey;
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+    }
+    p{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+}
+
+
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    min-width: 15rem;
+}
+.profile-picture{
+    width: 20%;
+    max-width: 6rem;
+    border-radius: 50%;
+}
+.profile-details{
+    margin-left: 1rem;
+    margin-right: 2rem;
+    flex-direction: column;
+    .name{
+        font-weight: 700;
+        font-size: 1.3rem;
+        width: 100%;
+        color: $DarkestGrey;
+    }
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+
+
+#click{
+    justify-self: end;
+    border: none;
+    border-radius: 50%;
+    margin-left: 20%;
+    & :hover{
+        cursor: pointer;
+        
+    }
+.point{
+    align-self: center;
+    min-width: 2.2rem;
+    padding: .8rem;
+    }
+}
+
+.pointer-dark{
+    justify-self: end;
+    border: none;
+    border-radius: 50%;
+    margin-left: 20%;
+    & :hover{
+        cursor: pointer;
+        
+    }
+.point-dark{
+    align-self: center;
+    min-width: 2.2rem;
+    padding: .8rem;
+    }
+}
+
+//Share Icon start JS mode
+.share {
+  
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    background: $DarkGrey;
+    position: absolute;
+    
+    z-index:10;
+    bottom: 0;
+    left: 0;
+    height: 14%;
+    width: 100%;
+    opacity: 0;
+
+   
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    transition: 0.3s ease-in-out;
+    
+    p{
+        margin-left: 4rem;
+        color: white;
+    }
+    li{
+        align-self: center;
+        padding: 1.5rem;
+        & :hover{
+            transform: scale(1.2);
+        }
+    }
+
+    
+}
+.show{
+    visibility: visible;
+    opacity: 1;
+
+}
+
+.icons{
+    display: none;
+}
+
+
+
+@media screen and (min-width:1100px) {
+    *, main, .card, .hero{
+        margin: none;
+        padding: none;
+        border-radius: 0;
+    }
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    main{
+        flex-direction: row;
+        border-radius: 1rem;
+        margin-top: 25vh;
+        max-width: 80rem;
+        .hero{
+            border-top-left-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+        }
+    }
+
+    .card{
+        border-radius: 1rem;
+    }
+
+    .hero{
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        min-height: 400px
+    }
+
+    .profile-details{
+        justify-content:flex-start;
+        transform: scale(1.2);
+        margin-left: 3rem;
+    }
+
+    #click{
+        border-radius: 50%;
+        margin-left: 45%;
+        margin-right: auto;
+    }
+}
