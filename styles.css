@@ -190,4 +190,32 @@ ul {
     margin-left: 45%;
     margin-right: auto;
   }
+  .share {
+    visibility: hidden;
+    display: block;
+    background-color: hsl(214deg, 17%, 51%);
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    top: -7.8rem;
+    left: 26.8rem;
+    height: 5.3rem;
+    border-radius: 1rem;
+    width: 24.5rem;
+    bottom: 20rem;
+  }
+  .share::after {
+    content: "";
+    position: absolute;
+    width: 1.6rem;
+    height: 1.6rem;
+    bottom: -0.8rem;
+    left: 50%;
+    transform: rotate(45deg);
+    background-color: #48556a;
+  }
 }/*# sourceMappingURL=styles.css.map */
