@@ -4,11 +4,11 @@
   font-family: "Manrope", sans-serif;
   font-weight: 500;
   font-size: 13px;
-  color: hsl(214deg, 17%, 51%);
+  color: hsl(214, 17%, 51%);
 }
 
 body {
-  background-color: hsl(210deg, 46%, 95%);
+  background-color: hsl(210, 46%, 95%);
   display: flex;
   justify-content: center;
 }
@@ -34,18 +34,18 @@ main {
 }
 
 .card {
-  margin: 3rem;
+  margin: 1rem 3rem 3rem 3rem;
 }
 .card h1 {
-  color: hsl(217deg, 19%, 35%);
+  color: hsl(217, 19%, 35%);
   font-weight: 700;
-  font-size: 1.8rem;
-  line-height: 2.7rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
 }
 .card p {
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 2rem;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   line-height: 2rem;
 }
 
@@ -72,7 +72,7 @@ main {
   font-weight: 700;
   font-size: 1.3rem;
   width: 100%;
-  color: hsl(217deg, 19%, 35%);
+  color: hsl(217, 19%, 35%);
 }
 
 ul {
@@ -85,10 +85,18 @@ ul {
   justify-self: end;
   border: none;
   border-radius: 50%;
-  margin-left: 20%;
+  margin-left: 2rem;
 }
 #click :hover {
   cursor: pointer;
+  z-index: 2;
+}
+#click #secondCLick {
+  justify-self: end;
+  border: none;
+  border-radius: 50%;
+  margin-left: 2rem;
+  background-color: red;
 }
 #click .point {
   align-self: center;
@@ -115,23 +123,22 @@ ul {
   visibility: hidden;
   display: flex;
   align-items: center;
-  background: hsl(214deg, 17%, 51%);
-  position: absolute;
+  background: hsl(214, 17%, 51%);
+  position: fixed;
   z-index: 10;
-  bottom: 0;
-  left: 0;
+  bottom: -0.2rem;
+  left: 0%;
   height: 14%;
   width: 100%;
   opacity: 0;
-  border-bottom-right-radius: 1rem;
-  border-bottom-left-radius: 1rem;
+  border-radius: 0 0 1rem 1rem;
   transition: 0.3s ease-in-out;
 }
 .share p {
-  margin-left: 4rem;
-  color: hsl(210deg, 46%, 95%);
-  letter-spacing: 1.1rem;
-  margin-right: 2rem;
+  margin-left: 1rem;
+  color: hsl(210, 46%, 95%);
+  letter-spacing: 0.8rem;
+  margin-right: 0.5rem;
 }
 .share li {
   align-self: center;
@@ -187,13 +194,13 @@ ul {
   }
   #click {
     border-radius: 50%;
-    margin-left: 45%;
+    margin-left: 8rem;
     margin-right: auto;
   }
   .share {
     visibility: hidden;
     display: block;
-    background-color: hsl(214deg, 17%, 51%);
+    background-color: hsl(214, 17%, 51%);
     position: absolute;
     z-index: 10;
     bottom: 0;

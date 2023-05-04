@@ -42,18 +42,18 @@ main{
 }
 
 .card{
-    margin: 3rem;
+    margin: 1rem 3rem 3rem 3rem;
 
     h1{
         color: $DarkestGrey;
         font-weight: 700;
-        font-size: 1.8rem;
-        line-height: 2.7rem;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
     }
     p{
-        margin-top: 2rem;
+        margin-top: 1rem;
         margin-bottom: 2rem;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         line-height: 2rem;
     }
 }
@@ -96,15 +96,24 @@ ul{
     justify-self: end;
     border: none;
     border-radius: 50%;
-    margin-left: 20%;
+    margin-left: 2rem;
     & :hover{
         cursor: pointer;
-        
+        z-index: 2;
     }
+#secondCLick{
+    justify-self: end;
+    border: none;
+    border-radius: 50%;
+    margin-left: 2rem;
+    background-color: red;
+}
+
 .point{
     align-self: center;
     min-width: 2.2rem;
     padding: .8rem;
+    
     }
 }
 
@@ -131,25 +140,23 @@ ul{
     display: flex;
     align-items: center;
     background: $DarkGrey;
-    position: absolute;
+    position: fixed;
     
     z-index:10;
-    bottom: 0;
-    left: 0;
+    bottom: -.2rem;
+    left: 0%;
     height: 14%;
     width: 100%;
     opacity: 0;
 
-   
-    border-bottom-right-radius: 1rem;
-    border-bottom-left-radius: 1rem;
+   border-radius: 0 0 1rem 1rem;
     transition: 0.3s ease-in-out;
     
     p{
-        margin-left: 4rem;
+        margin-left: 1rem;
         color: $Light;
-        letter-spacing: 1.1rem;
-        margin-right: 2rem;
+        letter-spacing: .8rem;
+        margin-right: .5rem;
     }
     li{
         align-self: center;
@@ -215,7 +222,7 @@ ul{
 
     #click{
         border-radius: 50%;
-        margin-left: 45%;
+        margin-left: 8rem;
         margin-right: auto;
     }
 

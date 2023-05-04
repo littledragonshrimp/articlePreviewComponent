@@ -16,8 +16,17 @@
 
 const arrow = document.querySelector("#click");
 const share = document.querySelector(".share");
+const unshare = document.querySelector("#secondClick");
+
 
 arrow.addEventListener("click", function () {
   share.classList.toggle("show");
   console.log("clicked!")
 });
+
+unshare.addEventListener("click", function () {
+  share.classList.toggle("show");
+  console.log("clicked as well!")
+});
+
+
